@@ -1,5 +1,22 @@
 //Your code below
+Function buildpath(p,n){
+  let path = [];
+  for(x=0;x<n.length;x++){
+  let r = Math.random();
+  if(r<=p){
+    path[x] = false;
+  }
+  else{
+    path[x] = true;
+  }
+}
+  path[x] = true;
+  return path[x]
+  }
 
+  Function stroll(path,links){
+
+  }
 
 
 
