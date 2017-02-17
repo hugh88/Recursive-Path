@@ -15,7 +15,23 @@ Function buildpath(p,n){
   }
 
   Function stroll(path,links){
+if(index == path.length){
+  return 1;
+}
+else if(index > path.length){
+  return 0;
+}
+else{
+  return stroll(path,links)
+}
 
+  }
+  Function rsj(path,links){
+    if(index = .length-1){
+      return 1;
+    else if( index > path.length-1){
+    }
+    }
   }
 
 
