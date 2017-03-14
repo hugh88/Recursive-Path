@@ -10,7 +10,7 @@ Function buildpath(p,n){
     path[x] = true;
   }
 }
-  path[x] = true;
+  path[x] = true;{
   return path[x]
   }
 
@@ -26,14 +26,18 @@ else{
 }
 
   }
-  Function rsj(path,links){
-    if(index = .length-1){
+  function rsj(path,index){
+    if(index == path.length-1){
       return 1;
-    else if( index > path.length-1){
     }
+    else if(index > path.length-1){
+      return 0;
+    }
+    else{
+      return rsj(path,index+1) + rsj(path,index+2) + rsj(path,index+5);
     }
   }
-
+}
 
 
 //Test code
